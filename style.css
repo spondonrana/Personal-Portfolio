@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+:root {
+  --yellow: orange;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background: white;
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+body {
+  background: #111111ef;
+  overflow-x: hidden;
+  padding-left: 35rem;
+}
+
+section {
+  min-height: 90vh;
+  padding: 1rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 35rem;
+  background: #1a1a1a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+header .user img {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.7rem solid var(--yellow);
+}
+
+header .user .name {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+header .user .post {
+  font-size: 2rem;
+  color: #eee;
+}
+
+header .navbar {
+  width: 100%;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+header .navbar ul li a {
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: #333;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+header .navbar ul li a:hover {
+  background: orange;
+}
+
+/* Home Stayle Start */
+.org-color {
+  color: orange;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.parent img {
+  width: 120%;
+  margin-top: 7rem;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 5rem;
+  margin-top: 10rem;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.home h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.home h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.home p {
+  font-size: 2rem;
+  color: white;
+  margin-top: 2rem;
+}
+
+.home a {
+  text-decoration: none;
+  background-image: linear-gradient(45deg, lightSalmon, orange);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+.about-sec {
+  text-align: center;
+}
+
+.about-img h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.hr-line {
+  border: 1px solid orange;
+  margin-bottom: 2rem;
+}
+.about-img img {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.7rem solid orange;
+}
+
+.about-pera p {
+  font-size: 2rem;
+  color: white;
+}
+
+.about-pera a {
+  text-decoration: none;
+  background-image: linear-gradient(45deg, lightSalmon, orange);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: 2rem;
+  width: fit-content;
+}
+.education h1 {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+}
+.edu-main {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.edu-first {
+  width: 300px;
+  height: 300px;
+  border: 1px solid gray;
+  box-shadow: 4px 4px 12px gray;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+}
+
+.edu-first:hover {
+  background-color: orange;
+}
+.edu-main h2 {
+  font-size: 2rem;
+  color: orange;
+}
+
+.edu-main h2:hover {
+  color: #111;
+}
+
+.edu-main li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.edu-main li:hover {
+  color: #111;
+}
+.icon {
+  text-align: center;
+}
+.icon img {
+  margin-top: 20px;
+  width: 100px;
+}
+
+.rounded-img {
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 5px;
+}
+.portfolio img {
+  width: 100%;
+  height: 250px;
+}
+
+.portfolio-sec h1 {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+}
+
+.port-main {
+  width: 400px;
+  height: 500px;
+  border: 1px solid gray;
+  box-shadow: 4px 4px 12px gray;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+}
+.port-main h2 {
+  font-size: 2rem;
+  color: orange;
+}
+
+.port-main p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.port-main a {
+  text-decoration: none;
+  background-image: linear-gradient(45deg, lightSalmon, orange);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  width: fit-content;
+  text-align: center;
+}
+/* #contact {
+  background-image: url(./logo/contact.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.contact-sec {
+  justify-content: center;
+  align-items: center;
+}
+.contact-sec h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+}
+.cont-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.cont-left {
+  width: 400px;
+  height: 300px;
+}
+.cont-right {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+.cont-left .title {
+  text-align: center;
+  font-size: 3.5rem;
+  color: orange;
+  margin-bottom: 4rem;
+}
+
+.info h3 {
+  color: #fff;
+  /* text-align: center; */
+  font-size: 2rem;
+  margin-left: 80px;
+}
+
+.info h3 i {
+  color: orange;
+  padding: 5px;
+  margin-right: 10px;
+  position: relative;
+}
+
+footer {
+  background-color: #111111ef;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card {
+  width: 350px;
+  height: 380px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.877);
+}
+
+.inner-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: orange;
+}
+
+.input-box {
+  width: 80%;
+  background: transparent;
+  border: 1px solid white;
+  margin: 6px 0;
+  height: 32px;
+  border-radius: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  color: #fff;
+}
+
+#textarea {
+  border-radius: 5%;
+  background: transparent;
+  border: 1px solid white;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.856);
+}
+.send-btn {
+  width: 40%;
+  height: 50%;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 2rem;
+  background: orange;
+}
